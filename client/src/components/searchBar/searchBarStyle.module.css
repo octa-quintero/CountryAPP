@@ -1,0 +1,276 @@
+.navbar{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  text-decoration: none ;
+  margin-bottom: 25px;
+  top: 25px;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 50px solid #e41f1f;
+  width: 500px;
+  height: 38px;
+  padding: 10px;
+  margin: 0;
+  padding-right: 35px;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  font-size: 1rem;
+  outline: none;
+  top: 0.8px;
+}
+
+.searchButton{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 15px;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.searchButton:hover{
+  background-color: rgb(29, 163, 150);
+}
+
+/* navBarStyle.css */
+.countryItem {
+  padding: 10px;
+  display: flex;
+  position: relative;
+  align-items: left;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  top: 25px;
+}
+
+.countryCard {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 160px;
+  font-size: 12px;
+  }
+
+.countryFlag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 4px;
+  border-radius: 15px;
+  background-color: black;
+  overflow: hidden;
+  width: 200px;
+  height: 150px;
+}
+
+.countryFlag1{
+  display: block;
+  transform: scale(1);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  height: 148px;
+  object-fit: cover;
+  transition: 0.2s;
+}
+
+.countryFlag1:hover{
+  transform: scale(1.08);
+}
+
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
+.countryInfo {
+  display: flex;
+  position: relative;
+  padding: 9px;
+  top: 8%;
+  border-radius: 0px 10px 10px 0px;
+  align-items: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  background-color: rgba(128, 115, 115, 0.3);
+  height: 76%;
+  flex: 0 0 50%;
+  transition: 0.5s;
+}
+
+.countryInfo:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.countryName {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.countryContinent {
+  color: white;
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.countryCapital{
+  color: white;
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.countrySubRegion{
+  color: white;
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.countryArea{
+  color: white;
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.countryPoblacion{
+  color: white;
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.listInfo li{
+  color: rgb(39, 217, 158);
+  font-family: "Oxanium";
+  font-weight: bold;
+  list-style: none;
+}
+
+.FilterOptionsContainer {
+  position: absolute;
+  top: 95px;
+  right: 80%;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.FilterOptionsGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 5px;
+  color: rgb(155, 155, 155);
+  font-size: 13px;
+}
+
+.FilterOptionsTitle {
+  position: relative;
+  right: 4px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 5px;
+
+}
+
+.FilterTitle {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.input{
+  position: relative;
+  right: 5px;
+  top: 1px;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationButton {
+  display: flex;
+  position: relative;
+  padding: 2px;
+  margin: 0 5px;
+  width: 90px;
+  height: 34px;
+  color: white;
+  background-image: linear-gradient(150deg, #00f7ff, rgb(29, 163, 150), #239029);
+  border: 0;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.paginationButton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 11px;
+  font-family: "Oxanium";
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #111;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.paginationButton span:hover{
+  font-size: 11.5px;
+  font-weight: bold;
+}
+
+.paginationButton:hover span {
+  background: none;
+}
+
+.paginationButton:active {
+  transform: scale(0.9);
+}
+
+
+.lineDivisor{
+  width: 50%;
+  height: 4px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 30px;
+  background: linear-gradient(45deg,#20c011, rgb(41, 85, 172), #5701f5);
+  background-size: 600% 100%;
+  animation: gradient 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}

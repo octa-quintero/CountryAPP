@@ -1,0 +1,231 @@
+.activitiesContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.activitiesCards{
+  display: flex;
+  margin-top: 30px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.activitiesCard{
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(128, 115, 115, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 85%;
+  height: 170px;
+  padding: 1px;
+  transition: 0.5s;
+}
+
+.activitiesImage{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  
+  overflow: hidden;
+  position:  absolute;
+  left: 310px;
+  border-radius: 10px;
+  bottom: 40px;
+  z-index: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.activityImage{
+  width: 200px;
+  max-width: 160px;
+  display: block;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.activityImage:hover{
+  transform: scale(1.05); 
+  filter: saturate(130%);
+}
+
+.activitiesCard:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.detalles{
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Oxanium";
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+}
+
+.activitiesLink{
+  width: 30%;
+  height: 25px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.activitiesTitle{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.activitiesCard{
+  list-style: none;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.activitiesCountry{
+  position: relative;
+  bottom: 8px;
+  width: 200px;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Oxanium";
+  transition: 0.3s;
+}
+
+.activitiesCountry:hover{
+  transform: scale(1.05);
+  text-shadow: 0 0 5px rgba(13, 219, 133, 1.5);
+  color: rgba(255, 255, 255, 0.936);
+
+}
+
+.activitiesList1{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  font-family: "Oxanium";
+}
+
+.activitiesListItem {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 2px;
+  flex-direction: row;
+}
+
+.activitiesListItem p{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: rgb(39, 217, 158);
+  font-family: "Oxanium";
+  font-weight: bold;
+  list-style: none;
+}
+
+.filtro{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  position: absolute;
+  top: 95px;
+  right: 82.7%;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.filtro label{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 5px;
+  color: rgb(155, 155, 155);
+  font-size: 13px;
+}
+
+.filtroTitle{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationButton {
+  display: flex;
+  position: relative;
+  padding: 2px;
+  margin: 0 5px;
+  width: 90px;
+  height: 34px;
+  color: white;
+  background-image: linear-gradient(150deg, #00f7ff, rgb(29, 163, 150), #239029);
+  border: 0;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.paginationButton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 11px;
+  font-family: "Oxanium";
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #111;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.paginationButton span:hover{
+  font-size: 11.5px;
+  font-weight: bold;
+}
+
+.paginationButton:hover span {
+  background: none;
+}
+
+.paginationButton:active {
+  transform: scale(0.9);
+} 
+
+.lineDivisor{
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  position: relative;
+  background: linear-gradient(45deg,#20c011, rgb(41, 85, 172), #5701f5);
+  background-size: 600% 100%;
+  animation: gradient 4s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}

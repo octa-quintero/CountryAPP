@@ -1,0 +1,212 @@
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  margin-bottom: 90px;
+  width: 100%;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 30px;
+  right: 100px;
+}
+
+.form_label{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  color: white;
+  font-family: "Oxanium";
+  padding: 3px;
+  margin-top: 1px;
+  top: 2px;
+}
+
+.form_country{
+  color: white;
+  font-family: "Oxanium";
+  font-size: 15px;
+  margin-top: 10px;
+  position: static;
+}
+
+.form_duration_container {
+  display: flex;
+  align-items: center;
+}
+
+.form_span {
+  position: relative;
+  margin-left: 0px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  left: 10px;
+  font-size: 10px;
+}
+
+.form_countries{
+  outline: none;
+  box-shadow: none;
+}
+
+.form input{
+  border: 3px solid;
+  border-radius: 5px;
+  width: 100%;
+  padding: 3px 10px;
+}
+
+
+.form select{
+    border: 3px solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 3px 10px;
+  }
+
+.form_label_countries{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: white;
+    font-family: "Oxanium";
+    padding: 3px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin-top: 1px;
+    top: 2px;
+  }
+
+.detalles{  
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Oxanium";
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+}
+
+.lineDivisor{
+  width: 50%;
+  height: 4px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 30px;
+  background: linear-gradient(45deg,#20c011, rgb(41, 85, 172), #5701f5);
+  background-size: 600% 100%;
+  animation: gradient 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+
+.pagination{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  top: 10px;
+}
+
+.paginationButton {
+  display: flex;
+  position: relative;
+  padding: 2px;
+  margin: 0 5px;
+  width: 90px;
+  height: 34px;
+  color: white;
+  background-image: linear-gradient(150deg, #00f7ff, rgb(29, 163, 150), #239029);
+  border: 0;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.paginationButton span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 11px;
+  font-family: "Oxanium";
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #111;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.paginationButton span:hover{
+  font-size: 11.5px;
+  font-weight: bold;
+}
+
+.paginationButton:hover span {
+  background: none;
+}
+
+.paginationButton:active {
+  transform: scale(0.9);
+}
+
+.paginationButton1 {
+  display: flex;
+  position: relative;
+  padding: 2px;
+  margin: 0 5px;
+  width: 40px;
+  height: 34px;
+  color: white;
+  background-image: linear-gradient(150deg, #00f7ff, rgb(29, 163, 150), #239029);
+  border: 0;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.paginationButton1 span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  font-family: "Oxanium";
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #111;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.paginationButton1 span:hover{
+  font-size: 11.5px;
+  font-weight: bold;
+}
+
+.paginationButton1:hover span {
+  background: none;
+}
+
+.paginationButton1:active {
+  transform: scale(0.9);
+}
+

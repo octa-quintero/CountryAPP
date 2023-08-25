@@ -1,0 +1,210 @@
+:root {
+  --violet: rgba(161, 132, 240, 0.774);
+  --other: #00f7ff;
+  --turquoise: #2fdabee1;
+}
+
+.countryApp{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.gradient-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  font-size: 45px;
+  background-image: linear-gradient(10000deg, var(--violet), var(--turquoise), var(--violet));
+  background-clip: text;
+  font-family: 'Fugaz One', cursive;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 4px transparent; 
+  animation: gradient 20s linear infinite;
+  text-shadow: 
+  0px 0px 0 rgba(0, 0, 0, 0.5),
+  0px 0px 0 rgba(0, 0, 0, 0.5),
+  0px 0px 0 rgba(0, 0, 0, 0.5),
+  0px 0px 0 rgba(0, 0, 0, 0.5);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: -80rem 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  height: 100vh;
+  grid-template-areas: "body-container";
+  background-image: url("../../../assets/background-image/fondo-landingPage.jpg");
+  background-size: cover;
+}
+
+
+
+.container-country {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 55%;
+  top: 25%;
+  padding: 10px;
+  width: 40%;
+  height: 40%;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  font-family: 'Fugaz One', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  margin-bottom: 13px;
+  animation: animacionContorno 1s infinite;
+  background: linear-gradient(45deg, #f06, #9f6, #06f, #f06);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes animacionContorno {
+  0%, 100% {
+    text-shadow: none;
+  }
+  25% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.title2{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  font-family: "Krona One";
+  color: white;
+  padding-bottom: 0px;
+  font-size: 15px;
+  letter-spacing: 0px;
+  margin-top: 0px;
+}
+
+.text{
+  position: relative;
+  top: 3px;
+  display: flex;
+  justify-content: left;
+  font-family: "Krona One";
+  color: white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+
+.nav-link-container {
+  display: inline-block;
+}
+
+.button-GO {
+  position: relative;
+  top: 32%;
+  padding: 4px;
+  color: white;
+  background-image: linear-gradient(150deg, #00f7ff, rgb(29, 163, 150), #239029);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-GO span {
+  display: flex;
+  width: 110px;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  text-decoration: none;
+  padding: 16px 24px;
+  background-color: #111;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.button-GO span:hover{
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.button-GO:hover span {
+  background: none;
+}
+
+.button-GO:active {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 780px) {
+  .body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-GO {
+    font-size: 16px;
+    top: 20px;
+  }
+
+  .button-GO span:hover {
+    font-size: 24px;
+  }
+
+  .button-GO span{
+    width: 100px;
+    height: 30px;
+  }
+
+  .container-country {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .title{
+    font-size: 50px;
+    font-weight: bold;    
+  }
+
+  .title-2{
+    font-size: 24px;
+    top: 15px;
+    font-weight: inherit;    
+  }
+  .text{
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b63cc04.css",
+    "main.js": "/static/js/main.dc693272.js",
+    "static/js/496.e8eee70e.chunk.js": "/static/js/496.e8eee70e.chunk.js",
+    "static/media/fondo-landingPage.jpg": "/static/media/fondo-landingPage.a1d29e87d78689d0a9f4.jpg",
+    "index.html": "/index.html",
+    "main.1b63cc04.css.map": "/static/css/main.1b63cc04.css.map",
+    "main.dc693272.js.map": "/static/js/main.dc693272.js.map",
+    "496.e8eee70e.chunk.js.map": "/static/js/496.e8eee70e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b63cc04.css",
+    "static/js/main.dc693272.js"
+  ]
+}

@@ -1,0 +1,98 @@
+.footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-image: linear-gradient(to top, rgba(14, 14, 14, 1), transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social a{
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  margin-inline: 30px;
+  transition: 0.2s;
+}
+
+
+.socialItemIg:hover{
+  color: rgb(195, 38, 119);
+}
+
+.socialItemFb:hover{
+  color: rgb(30, 56, 224);
+}
+
+.socialItemWs:hover{
+  color: rgb(24, 199, 71);
+}
+
+.logoIcon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.logoIcon:hover {
+  color: rgb(40, 215, 157);
+  transform: scale(1.1);
+}
+
+
+.logoIcon {
+  font-family: 'Fugaz One', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logoSub {
+  font-family: 'Fugaz One', cursive;
+  font-size: 3rem;
+  text-decoration: none;
+  position: relative;
+  bottom: 10px;
+}
+
+.footerMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItem{
+  margin: 0.8rem 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  color: #dcdcdc;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.menuItem:hover{
+  opacity: 1;
+}
+
+.copyright{
+  color: #f2f2f2;
+  opacity: 0.3;
+  text-align: center;
+}
