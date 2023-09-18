@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCountries, searchCountries, removeCountries, getAllCountries, setOrder, getCountriesOrder } from '../../redux/action.js';
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from "../searchBar/searchBarStyle.module.css"; // Importar estilos
+import styles from "../searchBar/searchBarStyle.module.css";
 import axios from 'axios';
 
 function SearchBar() {

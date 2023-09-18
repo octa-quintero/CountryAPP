@@ -18,8 +18,8 @@ function NavBar() {
         {/* Enlace al inicio */}
         <NavLink to="/home" className="logo">
           <div className="logo">  
-            <span className="logo-main">Country</span>
-            <span className="logo-sub">APP</span>
+            <h1 className="logoMain">Country</h1>
+            <h1 className="logoSub">APP</h1>
           </div>
         </NavLink>
         {/* Enlaces principales de navegación */}

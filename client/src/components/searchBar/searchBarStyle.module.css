@@ -1,10 +1,7 @@
 .navbar{
   display: flex;
   flex-direction: column;
-  height: 100%;
   align-items: center;
-  width: 100%;
-  padding: 20px;
   position: relative;
   text-decoration: none ;
   margin-bottom: 25px;
@@ -14,13 +11,16 @@
 .search{
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 25px rgb(0, 0, 0);
+  justify-content: center;
 }
 
 .searchInput {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 50px solid #e41f1f;
   width: 500px;
   height: 38px;
   padding: 10px;

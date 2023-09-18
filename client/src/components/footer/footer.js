@@ -24,7 +24,7 @@ function Footer(){
               <li className={styles.menuItem}>Cookies</li>
               <li className={styles.menuItem}>Privacidad</li>
             </ul>
-          <span className={styles.copyright}>2023, DeusExMachina. All rights reserved.</span>
+          <span className={styles.copyright}>2023. OctavioQuintero</span>
       </div>
     </div>
   )

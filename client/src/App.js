@@ -10,7 +10,6 @@ function App() {
   return (
     <div>
       <Routes>
-        {/* Rutas definidas utilizando el componente Route */}
         <Route path="/" element={<LandingPage />}/>
         <Route path="/home" element={<Home />}/>
         <Route path="/details/:id" element={<Details/>}/>
